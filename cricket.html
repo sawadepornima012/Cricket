@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket</title>
+  <style>
+    body{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bat Ball Stump Game</h1>
+  <button onclick ="
+
+  // this will generate randon no betn 0 & 3
+  let randomno = Math.random() * 3;
+  let compchoice;
+  if(randomno > 0 && randomno <= 1){
+     compchoice = 'Bat';
+    //console.log('computer choise is Bat');
+  }
+else if(randomno > 1 && randomno <=2){
+   compchoice = 'Ball';
+  //console.log('computer choise is Ball');
+}
+  else{
+     compchoice = 'Stump';
+    //console.log('computer choice is Stump');
+  }  
+  
+  let resultmsg;
+if(compchoice === 'Ball'){
+  resultmsg ='user win......';
+}
+else if(compchoice === 'Bat'){
+  resultmsg = 'its a tie';
+}
+else if(compchoice === 'Stump'){
+  resultmsg ='computer is win..';
+}
+  alert('u have select bat.computer choice is ${compchoice} and ${resultmsg}' )
+  ">Bat</button>
+  <button>Ball</button>
+  <button>Stump</button>
+
+</body>
+</html>
